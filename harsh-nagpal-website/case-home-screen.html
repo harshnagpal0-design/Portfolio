@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home screen · Harsh Nagpal</title>
+<meta name="description" content="How Harsh put meetups on the Misfits home screen: 34% more bookings per person.">
+<meta property="og:type" content="article"><meta property="og:title" content="Home screen · Harsh Nagpal"><meta property="og:description" content="How Harsh put meetups on the Misfits home screen: 34% more bookings per person."><meta property="og:image" content="og.png"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/bust.png">
+<script>document.documentElement.classList.add("js")</script>
+<style>
+@font-face{font-family:"News";src:url(fonts/news.woff2) format("woff2");font-weight:200 800;font-display:swap}
+@font-face{font-family:"News";src:url(fonts/news-i.woff2) format("woff2");font-weight:200 800;font-style:italic;font-display:swap}
+@font-face{font-family:"Pixel";src:url(fonts/pixel.woff2) format("woff2");font-display:swap}
+:root{--paper:#EDEBE2;--paper-2:#DEDCD1;--card:#F7F6F0;--ink:#1F1823;--ink-2:#4A4350;--ink-3:#645D6A;--plum:#2D2033;--gold:#E3A63A;--red:#B83C27;--rule:1.5px solid var(--ink);--hair:1px solid rgba(31,24,35,.15);--gut:clamp(16px,4vw,40px);--ease:cubic-bezier(.2,.7,.2,1);--px:"Pixel",monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--card);color:var(--ink);font-family:"News",Georgia,serif;font-size:19px;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--gut)}
+.px{font-family:var(--px);font-size-adjust:.5;text-transform:uppercase}
+.pix{image-rendering:pixelated}
+.mock{filter:drop-shadow(0 20px 26px rgba(31,24,35,.25))}
+.big{font-family:var(--px);color:var(--gold);text-shadow:3px 3px 0 var(--red),5px 5px 0 var(--ink)}
+em{font-style:italic;color:var(--red)}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease),transform .8s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+/* top bar: two floating pills */
+.bar{position:fixed;top:16px;left:0;right:0;z-index:50;pointer-events:none}
+.bar .in{max-width:1200px;margin:0 auto;padding:0 var(--gut);display:flex;justify-content:space-between;align-items:center}
+.bar a{pointer-events:auto;height:48px;display:inline-flex;align-items:center;gap:10px;border-radius:99px;box-shadow:0 12px 26px -12px rgba(31,24,35,.6);transition:transform .15s,background .2s}
+.bar .back{background:var(--ink);color:var(--paper);padding:0 20px 0 7px}
+.bar .back:hover{transform:translateX(-2px)}
+.bar .nx{background:var(--gold);color:var(--ink);padding:0 16px 0 20px}
+.bar .nx:hover{transform:translateX(2px)}
+.bar .av{width:34px;height:34px;border-radius:50%;flex:none;background:var(--gold) url(img/char/idle-front.png) no-repeat;background-size:138px 56px;background-position:0 2px;image-rendering:pixelated;animation:avf 1.6s steps(4) infinite}
+@keyframes avf{to{background-position:-138px 2px}}
+.bar .t{font-family:var(--px);font-size-adjust:.5;font-size:14px;text-transform:uppercase;line-height:1;white-space:nowrap;display:block}
+.bar svg{width:16px;height:16px;flex:none;display:block}
+.bar .back svg{color:var(--gold)}
+@media (max-width:620px){.bar{top:10px}.bar .back .x{display:none}}
+/* head */
+.head{padding:150px 0 10px;max-width:960px}
+.head .k{font-size:13px;color:var(--red)}
+.head h1{font-weight:500;font-size:clamp(44px,6vw,86px);letter-spacing:-.035em;line-height:1;margin:16px 0 34px;text-wrap:balance}
+.hgrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,64px);align-items:center;margin-top:10px}
+.hph{position:relative;height:clamp(380px,40vw,520px);background:var(--c);border:2px solid var(--ink);box-shadow:8px 8px 0 var(--ink);overflow:hidden}
+.hph::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(31,24,35,.12) 1.2px,transparent 1.2px);background-size:16px 16px}
+.hph img{position:absolute;width:min(46%,230px);height:auto;aspect-ratio:680/1389;filter:drop-shadow(0 18px 20px rgba(31,24,35,.28))}
+.hph img:nth-child(1){left:12%;top:14%;transform:rotate(-4deg)}
+.hph img:nth-child(2){right:10%;top:8%;transform:rotate(3deg)}
+.head .big{font-size:clamp(76px,8vw,128px)!important}
+.head .ln{font-size:clamp(22px,2.1vw,30px)!important;margin-top:10px!important;max-width:30ch!important}.head{padding-top:clamp(140px,17vh,180px)!important}.head h1.nf{margin:26px 0 0!important}.hero-ph{padding-top:clamp(56px,7vh,84px)!important}.factw{max-width:1120px}.factw .facts{margin-top:clamp(40px,5vw,64px)!important}.facts{margin-top:26px!important}.facts div{padding-top:14px!important;padding-bottom:14px!important}.hero-ph{padding-top:40px!important}.hero-ph img:nth-child(2){transform:translateY(-24px)!important}
+@media (max-width:860px){.hgrid{grid-template-columns:1fr}.hph{height:360px}.hph img{width:44%}}
+.head h1.nf{display:flex!important;align-items:flex-end;gap:clamp(20px,3vw,44px);flex-wrap:wrap}
+.head h1.nf .big{flex:none;line-height:.82!important}
+.head h1.nf .ln{flex:1 1 300px;margin:0 0 .12em!important;font-size:clamp(26px,2.75vw,40px)!important;line-height:1.12!important;max-width:25ch!important}
+.head{max-width:1120px!important}.facts{grid-template-columns:auto auto auto!important;justify-content:start;max-width:none!important}.facts div{padding-right:clamp(28px,4vw,64px)!important}.facts dt{font-size:14px!important}.facts dd{font-size:clamp(20px,1.75vw,24px)!important}
+@media (max-width:860px){.facts{grid-template-columns:1fr!important}}@media (max-width:760px){.head h1.nf{display:block!important}.head h1.nf .ln{margin-top:12px!important;font-size:24px!important;max-width:none!important}}
+.impact .big{font-family:"News",Georgia,serif!important;font-size-adjust:none!important;text-transform:none!important;text-shadow:none!important;color:var(--red)!important;font-weight:500;font-size:clamp(72px,8vw,120px)!important;letter-spacing:-.045em;line-height:.9!important;margin:0 0 14px!important}.head{text-align:center;margin-left:auto!important;margin-right:auto!important}.head h1.nf{display:flex!important;flex-direction:column!important;align-items:center!important;gap:0!important}.head h1.nf .big{line-height:.9!important}.head h1.nf .ln{flex:none!important;margin:10px auto 0!important;max-width:26ch!important;text-align:center;text-wrap:balance}.head .k{display:block;text-align:center}.split{display:grid;grid-template-columns:1fr 1fr;gap:0;margin-top:28px;border-top:2px solid var(--ink)}.split>div{padding:20px 24px 22px 0}.split>div+div{padding-left:24px;border-left:1px solid rgba(31,24,35,.18)}.split h5{font-family:var(--px);font-size-adjust:.5;font-weight:400;font-size:14px;text-transform:uppercase;letter-spacing:.07em;color:var(--red);margin:0 0 12px}.split ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}.split li{font-size:18px;line-height:1.35;color:var(--ink-2);padding-left:18px;position:relative}.split li::before{content:'';position:absolute;left:0;top:.6em;width:7px;height:7px;background:var(--ink-3)}.split .me li::before{background:var(--red)}.split .me li{color:var(--ink)}@media (max-width:760px){.split{grid-template-columns:1fr}.split>div+div{padding-left:0;border-left:0;border-top:1px solid rgba(31,24,35,.18)}}.vph{position:relative;display:block;aspect-ratio:680/1389}.vph video{position:absolute;left:5.15%;top:2.3%;width:89.85%;height:95.55%;object-fit:cover;object-position:top;border-radius:9.5%/4.6%;background:#111}.vph img{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.two.three figure{width:min(200px,28vw)}.head .ln .l1,.head .ln .l2{display:block}.head .ln .l1,.head .ln .l2{color:var(--ink)}.head .k{margin-bottom:38px!important}.head h1.nf{margin-top:0!important}.head h1.nf .big{line-height:.86!important}.head h1.nf .ln{margin-top:18px!important;line-height:1.22!important}@media (min-width:761px){.head .ln{max-width:none!important}.head .ln .l1,.head .ln .l2{white-space:nowrap}}em.hl{font-style:normal;font-weight:650;color:var(--ink);background:linear-gradient(transparent 60%,rgba(227,166,58,.42) 60%,rgba(227,166,58,.42) 90%,transparent 90%);padding:0 .08em;margin:0 -.04em;-webkit-box-decoration-break:clone;box-decoration-break:clone}.foot a{display:inline-block;padding:12px 0}.head h1.nf{display:block;max-width:none;margin:16px 0 0}.next .nb{color:var(--gold)}
+.head .big{display:block;font-family:"News",Georgia,serif!important;font-size-adjust:none!important;text-transform:none!important;text-shadow:none!important;font-weight:500;font-size:clamp(96px,13vw,190px);line-height:.88;letter-spacing:-.05em;color:var(--red)}
+.head .ln{display:block;margin-top:18px;font-size:clamp(28px,3.4vw,46px);line-height:1.15;letter-spacing:-.02em;color:var(--ink-2);max-width:22ch;font-weight:500}
+.head .ln b{font-weight:500;color:var(--ink)}
+.facts{display:grid;grid-template-columns:1fr 2fr 1fr;margin:44px 0 0;border-top:2px solid var(--ink);border-bottom:1px solid rgba(31,24,35,.18)}
+.facts div{padding:20px 24px 22px 0}.facts div+div{padding-left:24px;border-left:1px solid rgba(31,24,35,.18)}
+.facts dt{font-family:var(--px);font-size-adjust:.5;font-size:13px;text-transform:uppercase;letter-spacing:.07em;color:var(--red);margin-bottom:8px}
+.facts dd{margin:0;font-size:clamp(19px,1.6vw,22px);line-height:1.3;color:var(--ink)}
+.tried img.mock,.two img.mock{width:100%;height:auto;aspect-ratio:680/1389;object-fit:contain}.design img.mock{width:min(250px,60vw);height:auto;aspect-ratio:680/1389}
+@media (max-width:860px){.facts{grid-template-columns:1fr}.facts div+div{padding-left:0;border-left:0;border-top:1px solid rgba(31,24,35,.18)}.facts div{padding:16px 0}}
+.strip{display:grid;grid-template-columns:repeat(3,1fr);border-top:var(--rule);border-bottom:var(--rule)}
+.strip div{padding:18px 16px;border-left:var(--hair)}.strip div:first-child{border-left:0;padding-left:0}
+.strip b{display:block;font-family:var(--px);font-weight:400;font-size:clamp(20px,2.2vw,30px);color:var(--gold);text-shadow:2px 2px 0 var(--red),4px 4px 0 var(--ink);margin-bottom:8px}
+.strip span{font-size:16px;color:var(--ink-2)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:18px;font-size:17px;color:var(--ink-2)}
+.meta b{font-family:var(--px);font-size-adjust:.5;font-size:12px;font-weight:400;text-transform:uppercase;color:var(--red);margin-right:8px}
+.hero-ph{display:flex;justify-content:center;gap:clamp(16px,4vw,48px);padding:70px 0 20px;background:linear-gradient(transparent 50%,var(--c) 50%)}
+.hero-ph img{width:min(250px,30vw)}
+.hero-ph img:nth-child(2){transform:translateY(-36px)}
+.band{background:var(--c);height:60px;margin-bottom:10px}
+/* chapters */
+.ch{display:grid;grid-template-columns:200px 1fr;gap:40px;padding:70px 0;border-bottom:var(--hair)}
+.ch>.lab{position:sticky;top:96px;align-self:start;font-family:var(--px);font-size-adjust:.5;font-size:13px;text-transform:uppercase;color:var(--ink-3)}
+.ch>.lab b{display:block;color:var(--red);font-weight:400;margin-bottom:6px}
+.ch h2{font-weight:500;font-size:clamp(30px,3.4vw,46px);letter-spacing:-.025em;line-height:1.05;margin-bottom:16px;max-width:20ch;text-wrap:balance}
+.ch p{max-width:58ch;color:var(--ink-2)}
+.ch p+p{margin-top:12px}
+.ch p b{color:var(--ink)}
+.two{display:flex;gap:clamp(20px,4vw,40px);margin-top:34px;align-items:flex-start;flex-wrap:wrap}
+.two figure{width:min(230px,42vw)}
+img.raw{border:6px solid var(--ink);border-radius:30px;aspect-ratio:412/892;object-fit:cover;object-position:top;background:#fff;box-shadow:0 18px 26px -14px rgba(31,24,35,.45)}
+.tried{display:grid;grid-template-columns:repeat(3,minmax(0,210px));gap:clamp(16px,3vw,36px);margin-top:30px}
+.tried.two2{grid-template-columns:repeat(2,minmax(0,210px))}
+.tried figcaption{font-family:inherit;font-size:16px;text-transform:none;color:var(--ink-2);line-height:1.35}
+.tried figcaption b{display:block;font-family:var(--px);font-size-adjust:.5;font-size:12px;font-weight:400;text-transform:uppercase;margin-bottom:4px}
+.tried .no b{color:var(--red)}.tried .yes b{color:#2F7A4A}
+.tried .no img{opacity:.92}
+figcaption{font-family:var(--px);font-size-adjust:.5;font-size:12px;text-transform:uppercase;margin-top:12px;color:var(--ink-3)}
+.scene{width:min(420px,100%);margin-top:28px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:20px 0 6px}
+.chips span{font-family:var(--px);font-size-adjust:.5;font-size:13px;text-transform:uppercase;padding:9px 12px;border:var(--rule);background:#fff}
+.chips span.bad{background:#F6DDD6;border-color:var(--red);color:var(--red)}
+.chips i{font-style:normal}
+.nums{display:grid;gap:22px;margin-top:22px;max-width:62ch}
+.nums div{display:grid;grid-template-columns:52px 1fr;gap:12px}
+.nums div>span{font-family:var(--px);font-size:15px;color:var(--red);padding-top:4px}
+.nums div.dead p{text-decoration:line-through;text-decoration-thickness:1px;color:var(--ink-3)}
+.nums div.dead>span{color:var(--ink-3)}
+.quote{font-weight:500;font-size:clamp(34px,4.6vw,64px);letter-spacing:-.03em;line-height:1.05;max-width:18ch;color:var(--ink)!important}
+.quote+p{margin-top:20px}
+.design{display:flex;gap:40px;align-items:center;margin-top:30px;flex-wrap:wrap}
+.design img{width:min(270px,70vw)}
+.design ol{list-style:none;display:grid;gap:12px}
+.design li{font-size:18px;color:var(--ink-2);padding-left:22px;position:relative}
+.design li::before{content:"▶";position:absolute;left:0;color:var(--red)}
+.impact .big{font-size:clamp(64px,10vw,140px);line-height:1;display:block;margin:6px 0 24px}
+/* friends: funnel + table */
+.fun{display:grid;gap:10px;margin-top:28px;max-width:640px}
+.fun .r{display:grid;grid-template-columns:130px 1fr 70px;gap:12px;align-items:center;font-family:var(--px);font-size-adjust:.5;font-size:13px;text-transform:uppercase}
+.fun .t{height:22px;background:var(--paper-2);border:var(--rule);position:relative}
+.fun .t i{position:absolute;inset:0 auto 0 0;background:var(--ink);width:0;transition:width 1.2s var(--ease)}
+.fun.in .t i{width:var(--w)}
+.fun .r.hi .t i{background:var(--red)}
+.fun small{font-family:var(--px);font-size-adjust:.5;font-size:11px;text-transform:uppercase;color:var(--ink-3);margin-top:6px}
+.tbl{margin-top:28px;max-width:640px;border-top:var(--rule)}
+.tbl .r{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:10px;padding:14px 0;border-bottom:var(--hair);align-items:baseline}
+.tbl .r.h{font-family:var(--px);font-size-adjust:.5;font-size:11px;text-transform:uppercase;color:var(--ink-3)}
+.tbl .r b{font-family:var(--px);font-weight:400;font-size:20px}
+.tbl .r b.a{color:var(--red)}
+/* end */
+.next{display:block;background:var(--plum);color:var(--paper);padding:90px 0 100px;margin-top:40px;transition:background .3s}
+.next:hover{background:#3D2E45}
+.next .px{font-size:13px;color:var(--gold)}
+.next h2{font-weight:500;font-size:clamp(36px,5vw,70px);letter-spacing:-.03em;line-height:1.02;margin:14px 0 24px;max-width:18ch}
+.next .go{font-family:var(--px);font-size-adjust:.5;font-size:14px;text-transform:uppercase;border-bottom:2px solid var(--gold);padding-bottom:4px;color:var(--gold)}
+.foot{background:var(--ink);color:rgba(237,235,226,.6);font-family:var(--px);font-size-adjust:.5;font-size:12px;text-transform:uppercase}
+.foot .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
+.foot a{color:var(--gold)}
+@media (max-width:700px){.tried{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:860px){.ch{grid-template-columns:1fr;gap:14px;padding:54px 0}.ch>.lab{position:static}.strip{grid-template-columns:1fr}.strip div{border-left:0;padding-left:0;border-top:var(--hair)}.strip div:first-child{border-top:0}.hero-ph img:nth-child(3){display:none}.hero-ph img{width:42vw}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.head .k{font-size:14px!important}.ch>.lab{font-size:14px}figcaption{font-size:13px}
+.fun .r{font-size:14px}.fun small{font-size:13px}.tbl .r.h{font-size:13px}.next .px{font-size:14px!important}.next .go{font-size:15px}
+.foot{font-size:13px}.meta b{font-size:13px}.tried figcaption b{font-size:13px}
+</style>
+</head>
+<body style="--c:#C8D4E2">
+<header class="bar"><div class="in">
+  <a class="back" href="index.html#work" aria-label="Back to portfolio"><span class="av" aria-hidden="true"></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3.5 5.5 8 10 12.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="t">Back<span class="x"> to portfolio</span></span></a>
+  <a class="nx" href="case-friends.html"><span class="t">Next<span class="x"> case</span></span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div></header>
+<main>
+<div class="wrap"><div class="head rv"><span class="px k">Case 02 · Home screen · Shipped</span><h1 class="nf"><span class="big">+34%</span><span class="ln"><span class="l1">more bookings per person,</span><span class="l2">now that booking takes <em class="hl">2 steps, not 4</em>.</span></span></h1></div></div>
+<div class="hero-ph rv"><img class="mock" src="img/m/my-clubs.webp" alt=""><img class="mock" src="img/m/home-feed.webp" alt=""><img class="mock" src="img/m/spot-booked.webp" alt=""></div>
+<div class="wrap"><div class="factw rv"><dl class="facts"><div><dt>Role</dt><dd>Sole product designer</dd></div><div><dt>Team</dt><dd>2 front-end + 1 back-end engineers, PM, CEO</dd></div><div><dt>Design time</dt><dd>3 weeks</dd></div></dl></div></div>
+
+<div class="wrap">
+<section class="ch rv "><div class="lab"><b>01</b>The problem</div><div><h2>Meetup bookings were low.</h2><p>The meetup is the product: <b>the thing you turn up to and the thing you pay for</b>. People followed clubs, but far too few ever booked one.</p></div></section>
+<section class="ch rv "><div class="lab"><b>02</b>The old way</div><div><h2>Getting to one took four steps.</h2><div class="chips"><span>Pick a club</span><i>→</i><span class="bad">Join it</span><i>→</i><span>Browse its meetups</span><i>→</i><span>Book</span></div><div class="two"><figure><img class="mock" src="img/m/my-clubs.webp" alt="The home screen" loading="lazy"><figcaption>The home screen</figcaption></figure><figure><img class="mock" src="img/m/club-meetups.webp" alt="Inside one club" loading="lazy"><figcaption>Inside one club</figcaption></figure></div></div></section>
+<section class="ch rv "><div class="lab"><b>03</b>Why</div><div><h2>Every step lost people, for a different reason.</h2><div class="nums"><div class=""><span>01</span><p><b>You had to guess which club had it.</b> “What can I do on Saturday?” only had an answer if you knew where to look.</p></div><div class=""><span>02</span><p><b>Joining came before looking.</b> We asked for commitment before showing anything worth committing to.</p></div><div class=""><span>03</span><p><b>You only saw your own clubs.</b> Every other meetup was invisible.</p></div></div></div></section>
+<section class="ch rv "><div class="lab"><b>04</b>The insight</div><div><p class="quote">They wanted a plan, not a club.</p><p>Six rounds of testing, regulars and newcomers alike: everyone went hunting for something to do.</p></div></section>
+<section class="ch rv "><div class="lab"><b>05</b>How I got there</div><div><h2>Six rounds. The club page was never the problem.</h2><div class="nums"><div class=""><span>01</span><p><b>Every tester went looking for a meetup,</b> whatever we put in front of them.</p></div><div class="dead"><span>02</span><p><b>We explained the club better.</b> Nothing moved.</p></div><div class=""><span>03</span><p><b>So I stopped fixing the club page.</b> Meetup first, joining after.</p></div></div></div></section>
+<section class="ch rv "><div class="lab"><b>06</b>What I tried</div><div><h2>My clubs in a row, everything else below.</h2><p>The first two layouts put your own clubs’ meetups in a sideways row, with every other meetup in a vertical list. <b>In testing people scrolled down, not across:</b> they explored, and only the first meetup from their own clubs ever got seen.</p><div class="tried two2"><figure class="no"><img class="mock" src="img/m/home-v1.webp" alt="" loading="lazy"><figcaption><b>✕ Dropped</b>Your clubs in a sideways row. The rest of the row was missed.</figcaption></figure><figure class="yes"><img class="mock" src="img/m/home-feed.webp" alt="" loading="lazy"><figcaption><b>✓ Shipped</b>One vertical feed, every meetup in reach.</figcaption></figure></div></div></section>
+<section class="ch rv "><div class="lab"><b>07</b>The design</div><div><h2>The meetup is the home screen.</h2><p>Every meetup on the platform, joined club or not, in one feed. The club became <b>a name above its meetups</b>, and joining moved to the end.</p><div class="design"><img class="mock" src="img/m/home-feed.webp" alt="The new home screen" loading="lazy"><ol><li>Club name above each meetup</li><li>One feed, scrolled the way people already scroll</li><li>Filters for area, activity and day</li><li>See it, then book it</li></ol></div></div></section>
+<section class="ch rv impact"><div class="lab"><b>08</b>The impact</div><div><span class="big">+34%</span><h2>more meetups booked per person.</h2><p>From 4.77 to 6.39 bookings a month. <b>The people the club had been keeping out</b> booked across more clubs, and more of them came back the month after.</p></div></section>
+<section class="ch rv "><div class="lab"><b>09</b>What I learned</div><div><p class="quote">Give the value first. Ask afterwards.</p><p>Joining a club was us asking first. Moving the ask to the end was the whole change.</p></div></section>
+</div>
+</main>
+<a class="next" href="case-friends.html"><div class="wrap"><span class="px">Next case</span><h2><span class="nb">4 in 10</span> people who go to a meetup now leave with a friend.</h2><span class="go">Read it ▶</span></div></a>
+<footer class="foot"><div class="wrap"><a href="index.html#work">◀ Back to portfolio</a><span>© 2026 Harsh Nagpal</span><a href="index.html#contact">Say hi ▶</a></div></footer>
+<script>(function(){var r=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches,els=[].slice.call(document.querySelectorAll('.rv,.fun'));
+if(!('IntersectionObserver' in window)||r){els.forEach(function(e){e.classList.add('in')});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -12% 0px'});els.forEach(function(e){io.observe(e)})})();</script>
+</body>
+</html>
