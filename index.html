@@ -653,7 +653,7 @@ figure.yes::after{content:"";position:absolute;inset:0;border:20px solid transpa
  <footer><span>© 2026 Harsh Nagpal</span><span class="open"><i class="dot"></i>Open to product design roles</span></footer>
 </main><script>(function(){
 var red=matchMedia('(prefers-reduced-motion: reduce)').matches;
-var ac=null,on=false;try{on=localStorage.getItem('snd')==='1'}catch(e){}
+var ac=null,on=true;try{on=localStorage.getItem('snd')!=='0'}catch(e){}
 var sb=document.querySelector('.snd');function lab(){sb.setAttribute('aria-pressed',on);var t=sb.querySelector('.t');if(t)t.textContent=on?'Sound on':'Sound off'}lab();
 sb.onclick=function(){on=!on;try{localStorage.setItem('snd',on?'1':'0')}catch(e){}lab();if(on)beep('coin')};
 function tone(f,t,d,v){var o=ac.createOscillator(),g=ac.createGain();o.type='square';o.frequency.setValueAtTime(f,ac.currentTime+t);g.gain.setValueAtTime(v||.04,ac.currentTime+t);g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+t+d);o.connect(g);g.connect(ac.destination);o.start(ac.currentTime+t);o.stop(ac.currentTime+t+d+.02)}
